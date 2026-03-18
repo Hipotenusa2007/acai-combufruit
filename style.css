@@ -279,7 +279,7 @@ textarea {
   overflow: hidden;
   background:
     linear-gradient(135deg, rgba(15, 7, 24, 0.95), rgba(54, 18, 88, 0.9)),
-    url("assets/img/hero.jpg") center/cover no-repeat;
+    url("https://i.imgur.com/QmJ3EfX.jpg") center/cover no-repeat; /* Ajustado para URL direta do imgur */
 }
 
 .hero-overlay {
@@ -697,6 +697,20 @@ textarea {
   box-shadow: var(--shadow-md);
 }
 
+/* --- OTIMIZAÇÃO EXCLUSIVA DO CAMINHÃO --- */
+.img-truck-optimize {
+    /* Ativa algoritmos de nitidez do navegador */
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    
+    /* Realce sutil de cor para o caminhão e o ambiente */
+    filter: contrast(1.08) saturate(1.1) brightness(1.02);
+    
+    /* Performance */
+    will-change: transform;
+    backface-visibility: hidden;
+}
+
 .logistica-texto .btn {
   margin-top: 28px;
 }
@@ -705,7 +719,7 @@ textarea {
 .cta {
   background:
     linear-gradient(135deg, rgba(20, 8, 33, 0.96), rgba(70, 24, 115, 0.94)),
-    url("assets/img/logistica.jpg") center/cover no-repeat;
+    url("https://i.imgur.com/8wCEb7k.jpg") center/cover no-repeat; /* Ajustado para URL direta do imgur */
   position: relative;
 }
 
